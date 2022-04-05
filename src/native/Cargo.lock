@@ -9,14 +9,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "electron-react-neon-typescript-boilerplate"
-version = "0.1.0"
-dependencies = [
- "neon",
- "num_cpus",
-]
-
-[[package]]
 name = "hermit-abi"
 version = "0.1.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -39,6 +31,14 @@ checksum = "351a32417a12d5f7e82c368a66781e307834dae04c6ce0cd4456d52989229883"
 dependencies = [
  "cfg-if",
  "winapi",
+]
+
+[[package]]
+name = "luftmail"
+version = "0.1.0"
+dependencies = [
+ "neon",
+ "num_cpus",
 ]
 
 [[package]]
