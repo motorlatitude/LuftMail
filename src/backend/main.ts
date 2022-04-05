@@ -1,16 +1,24 @@
+/**
+ * Webpack preload entry constant
+ */
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: any;
+/**
+ * Webpack main entry constant
+ */
 declare const MAIN_WINDOW_WEBPACK_ENTRY: any;
 
 // Modules to control application life and create native browser window
-import { app, BrowserWindow } from 'electron'
+import { app } from 'electron'
+import { BrowserWindow } from 'electron-acrylic-window'
 
 function createWindow() {
   // Create the browser window.
   const mainWindow: any = new BrowserWindow({
     width: 900,
     height: 500,
-    resizable: false,
-    autoHideMenuBar: true,
+    resizable: true,
+    frame: false,
+    vibrancy: 'dark',
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY
     }
